@@ -1,3 +1,17 @@
+:root {
+    --background-color:#cccccc;;
+    --heading-font: Verdana, Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 3px solid rgb(160 85 44 / 1);
+    --font-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -14,17 +28,21 @@ main {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
 }
 
 aside {
+    position: relative;
     width: 30rem;
+    /* Commented out with addition of .box class added below in Class Selectors
     margin: 1rem;
-    border: 3px solid rgb(160 85 44 / 1);
-    padding: 1rem;
-    background-color: #cccccc;
+    border: var(--border);
+    padding: var(--padding);
+    background-color: var(--background-color);
     color: #000;
+    */
     text-align: center;
 }
 
@@ -33,11 +51,30 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 1.5rem;
+    right: 13rem;
+    color:rgb(153, 224, 120);
+}
+
 h1 {
+    font-family: var(--heading-font);
     color: darkblue;
 }
 
+/* This was prior to adding the aside img and being more specific with the images within main using main img {}
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+*/
+
 p {
+    font-family: var(--heading-font);
     padding: 0;
 }
 
@@ -45,4 +82,14 @@ footer {
     margin-top: 2px;
     border-top: 4px double #000;
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: var(--border);
+    padding: var(--padding);
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
