@@ -1,0 +1,113 @@
+/* Selectors, Elements, Variables, & Examples
+
+Selectors:
+* - Selects all elements
+. - Defines a class for an element
+# - Defines an id for an element
+
+Elements:
+These are the HTML 'elements' being selected for styling
+p for <p>
+h2 for <h2>
+
+para below is only an example name. This could be anything that makes sense.
+.para for <p class="para">
+#para for <p id="para">
+
+Variables:
+Defined with a double hyphen--
+Called with var 
+--heading-font: 'Rock Salt', 'Fuzzy Bubbles', Helvetica, sans-serif;
+h1 {
+    font-family: var(--heading-font);
+}
+
+A ' * ' selects all elements */
+* {
+    margin: 0;
+}
+
+/* Class selectors are prefixed with a ' . ' */
+.h2 {
+    color: red;
+}
+
+/* ID selectors are prefixed with a ' # ' */
+#div-box {
+    padding: 1px;
+}
+
+/* Multiple Emlement Selection */
+div,
+img,
+p {
+    border: 1px solid blue;
+}
+
+/* Variables */
+:root {
+    --heading-font: 'Rock Salt', 'Fuzzy Bubbles', Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+
+/* Box Model
+--------------------Margin--------------------
+|    ---------------Border---------------    |
+|    |    ----------Padding----------   |    |
+|    |    |         Content         |   |    |
+|    |    ----------Padding----------   |    |
+|    ---------------Border---------------    |
+--------------------Margin--------------------
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+Example: */
+
+div {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+/* CSS Units
+
+Absolute:
+cm	centimeters
+mm	millimeters
+in	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	points (1pt = 1/72 of 1in)
+pc	picas (1pc = 12 pt)
+
+Relative
+em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	Relative to the x-height of the current font (rarely used)	
+ch	Relative to width of the "0" (zero)	
+rem	Relative to font-size of the root element	
+vw	Relative to 1% of the width of the viewport*	
+vh	Relative to 1% of the height of the viewport*	
+vmin	Relative to 1% of viewport's* smaller dimension	
+vmax	Relative to 1% of viewport's* larger dimension	
+%	Relative to the parent element
+
+Example: */
+
+h1 {
+    font-size: 60px;
+    /* or */
+    font-size: 1rem;
+}
+
+p {
+    font-size: 2em;
+    /* twice the size of what the current font was set */
+    line-height: 50px;
+}
