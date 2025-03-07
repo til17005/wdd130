@@ -41,6 +41,13 @@ h6 {
     text-align: center;
 }
 
+p {
+    line-height: 1.6;
+    letter-spacing: .06em;
+    font-size: large;
+    text-shadow: 3px 3px var(--primary-color);
+}
+
 /* Reservered
 head {
 
@@ -106,16 +113,12 @@ main div {
 }
 */
 
-.hero p {
-    margin-left: 4em;
-    padding: 1em;
-    font-size: large;
-}
-
-.hero ul {
-    margin-left: 4em;
-    padding: 1em;
-    font-size: large;
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -135,14 +138,97 @@ main div {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
-section {
-    clear: both;
-    height: 15em;
+.hero h1{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent1-color);
+    text-shadow: 2px 4px var(--accent2-color);
+    z-index: 1;
+}
 
-    border: 1px solid red;
-    /* Just to show where the section elements are located */
+.hero h2{
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent1-color);
+    text-shadow: 2px 5px var(--accent2-color);
+    z-index: 1;
+}
+
+.hero p {
+    width: 70%;
+    padding: 1em;
+}
+
+.hero ul {
+    margin-left: 4em;
+    padding: 1em;
+    font-size: large;
+}
+
+.about {    
+    padding: 2em;
+    border-top: 10px solid #140B00;
+    justify-items: center;
+}
+
+.about h3 {
+    text-shadow: 2px 5px var(--primary-color);
+}
+
+.happy {
+    display: flex;
+    justify-content: center;
+}
+
+.happy img {
+    width: auto;
+    height: 20em;
+    margin-top: 2em;
+}
+
+.happy p {
+    width: 55%;
+}
+
+.history {
+    padding: 2em;
+    justify-items: center;
+}
+
+.history h2 {
+    text-shadow: 2px 5px var(--primary-color);
+}
+
+.history p {
+    padding-top: 1em;
+    width: 70%;
+}
+
+.adventure {    
+    margin: 0 auto;
+    padding: 2em;
+    height: 20em;
+}
+
+.adventure h2 {
+    text-shadow: 2px 5px var(--primary-color);
+}
+
+.adventure div {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    gap: 3em;
+}
+.adventure img{    
+    width: 15em;
 }
 
 footer {
