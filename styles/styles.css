@@ -36,13 +36,12 @@ main img {
 aside {
     position: relative;
     width: 30rem;
-    /* Commented out with addition of .box class added below in Class Selectors
+    /* Commented out with addition of .box class added below in Class Selectors */
     margin: 1rem;
     border: var(--border);
     padding: var(--padding);
     background-color: var(--background-color);
     color: #000;
-    */
     text-align: center;
 }
 
