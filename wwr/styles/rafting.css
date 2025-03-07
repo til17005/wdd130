@@ -100,19 +100,26 @@ main {
 }
 */
 
-main p {
+/* Reserved
+main div {
+
+}
+*/
+
+.hero p {
     margin-left: 4em;
     padding: 1em;
     font-size: large;
 }
 
-main ul {
+.hero ul {
     margin-left: 4em;
     padding: 1em;
     font-size: large;
 }
 
-main img {
+/*
+.hero img {
     max-width: 100%;
     height: auto;
     position: relative;
@@ -122,13 +129,20 @@ main img {
     z-index: -1;
     border-radius: 25em;
 }
+*/
 
-aside {
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section {
     clear: both;
     height: 15em;
 
     border: 1px solid red;
-    /* Just to show where the aside elements are located */
+    /* Just to show where the section elements are located */
 }
 
 footer {
@@ -148,14 +162,19 @@ footer p {
 }
 
 .footer-menu a {
+    text-decoration: none;
     position: relative;
+    top: -30%;
     left: 73em;
-    color: var(--accent1-color);
     padding: .5%;
 }
 
 .footer-menu a:hover {
     color: var(--primary-color);
+}
+
+.footer-menu img {
+    width: 2em;
 }
 
 /* Font Use Examples
