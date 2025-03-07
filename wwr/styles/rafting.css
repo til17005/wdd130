@@ -1,3 +1,4 @@
+/* root - contains my variables */
 :root {
     --background-color: #cccccc;
     --heading-font: 'Rock Salt', 'Fuzzy Bubbles', Helvetica, sans-serif;
@@ -20,24 +21,14 @@
     --caribbean-current: rgba(25, 106, 124, 1);
 }
 
+/* wild card settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-    /* Full viewport height */
-    margin: 0;
-    /* Remove default margin */
-    /* background: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 33%, var(--secondary-color) 67%), var(--secondary-color) 100%; */
-    background: linear-gradient(to right, var(--primary-color) 20%, var(--secondary-color) 40%, var(--secondary-color) 60%, var(--primary-color) 75%);
-    color: var(--accent1-color);
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
+/* Default heading settings */
 h1,
 h2,
 h3,
@@ -45,7 +36,29 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
+    font-weight: 600;
+    font-style: normal;
     text-align: center;
+}
+
+/* Reservered
+head {
+
+} */
+
+body {
+    height: 100vh;
+    /* Full viewport height */
+
+    background: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 33%, var(--secondary-color) 67%), var(--secondary-color) 100%;
+    /* background: linear-gradient(to right, var(--primary-color) 20%, var(--secondary-color) 40%, var(--secondary-color) 60%, var(--primary-color) 75%); */
+    background: linear-gradient(to right, var(--primary-color) 0%, var(--accent2-color) 67%, var(--secondary-color) 90%);
+    color: var(--accent1-color);
+
+    overflow-x: hidden;
+    /* Hide bottom scroll bar */
+    overflow-y: auto;
+    /* Auto adjust side scroll bar */
 }
 
 header {
@@ -81,6 +94,12 @@ header {
     color: var(--primary-color);
 }
 
+/* Reserved
+main {
+
+}
+*/
+
 main p {
     margin-left: 4em;
     padding: 1em;
@@ -94,19 +113,54 @@ main ul {
 }
 
 main img {
+    max-width: 100%;
+    height: auto;
     position: relative;
     float: right;
     left: 1%;
-    top: -135px;
+    top: -165px;
     z-index: -1;
-    border-radius: 10em;
+    border-radius: 25em;
 }
 
 aside {
     clear: both;
+    height: 15em;
+
+    border: 1px solid red;
+    /* Just to show where the aside elements are located */
 }
 
-/* Font Use Examples */
+footer {
+    background-color: var(--accent2-color);
+    display: block;
+    width: 100%;
+    height: 5rem;
+}
+
+footer p {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer-menu {
+    display: inline;
+}
+
+.footer-menu a {
+    position: relative;
+    left: 73em;
+    color: var(--accent1-color);
+    padding: .5%;
+}
+
+.footer-menu a:hover {
+    color: var(--primary-color);
+}
+
+/* Font Use Examples
+(font-weight: 100 - 900)
+
 .rock-salt-regular {
     font-family: "Rock Salt", cursive;
     font-weight: 400;
@@ -117,7 +171,6 @@ aside {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    /* 100 - 900 */
     font-style: normal;
 }
 
@@ -132,3 +185,4 @@ aside {
     font-weight: 700;
     font-style: normal;
 }
+*/
