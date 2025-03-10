@@ -126,6 +126,7 @@ main div {
     width: 100%;
     height: auto;
     margin: 0;
+    opacity: .5;
 }
 
 .hero h1 {
@@ -156,7 +157,6 @@ main div {
 .hero p {
     width: 60%;
     padding: 1em;
-    border: 1em solid #24B5D3;
     margin-left: 15em;
 }
 
@@ -168,9 +168,10 @@ main div {
 
 .hero article img {
     float: right;
-    margin: 2em 8em 0 0;
+    margin: 1.5em 8em 0 0;
     width: auto;
     height: 20em;
+    opacity: 1;
 }
 
 .history {
