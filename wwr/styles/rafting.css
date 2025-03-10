@@ -121,19 +121,6 @@ main div {
     padding: 0;
 }
 
-/*
-.hero img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    float: right;
-    left: 1%;
-    top: -165px;
-    z-index: -1;
-    border-radius: 25em;
-}
-*/
-
 .hero img {
     display: block;
     width: 100%;
@@ -141,7 +128,7 @@ main div {
     margin: 0;
 }
 
-.hero h1{
+.hero h1 {
     position: absolute;
     top: 4%;
     left: 50%;
@@ -151,9 +138,9 @@ main div {
     z-index: 1;
 }
 
-.hero h2{
+.hero h2 {
     position: absolute;
-    top: 34%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--accent1-color);
@@ -161,9 +148,16 @@ main div {
     z-index: 1;
 }
 
+.hero article {
+    position: absolute;
+    top: 15%;
+}
+
 .hero p {
-    width: 70%;
+    width: 60%;
     padding: 1em;
+    border: 1em solid #24B5D3;
+    margin-left: 15em;
 }
 
 .hero ul {
@@ -172,29 +166,11 @@ main div {
     font-size: large;
 }
 
-.about {    
-    padding: 2em;
-    border-top: 10px solid #140B00;
-    justify-items: center;
-}
-
-.about h3 {
-    text-shadow: 2px 5px var(--primary-color);
-}
-
-.happy {
-    display: flex;
-    justify-content: center;
-}
-
-.happy img {
+.hero article img {
+    float: right;
+    margin: 2em 8em 0 0;
     width: auto;
     height: 20em;
-    margin-top: 2em;
-}
-
-.happy p {
-    width: 55%;
 }
 
 .history {
@@ -211,7 +187,7 @@ main div {
     width: 70%;
 }
 
-.adventure {    
+.adventure {
     margin: 0 auto;
     padding: 2em;
     height: 20em;
@@ -227,7 +203,8 @@ main div {
     padding: 2em;
     gap: 3em;
 }
-.adventure img{    
+
+.adventure img {
     width: 15em;
 }
 
@@ -260,6 +237,7 @@ footer p {
 }
 
 .footer-menu img {
+    text-decoration: none;
     width: 2em;
 }
 
