@@ -12,84 +12,110 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1d2951;
+    padding: 1rem;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #6495ed;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 main {
-    max-width: 800px;
+    grid-column: 2/3;
+    margin: 1em;
 }
 
 main img {
     float: right;
     width: 150px;
     height: auto;
+    border-radius: 2em;
+    box-shadow: 5px 5px 15px #6495ed;
+}
+
+main h1 {
+    font-family: var(--heading-font);
+    color: #1d2951;
+    border-bottom: 1px solid #1d2951;
+}
+
+.box {
+    /* clear: both; */
+    margin: 1rem;
+    padding: var(--padding);
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border-radius: 3em;
+}
+
+.box li {
+    margin-left: 1.5em;
+}
+
+.box a {
+    color: #1d2951;
+}
+
+.box a:hover {
+    color: #6495ed;
 }
 
 aside {
+    margin: 1em;
     position: relative;
-    width: 30rem;
-    /* Commented out with addition of .box class added below in Class Selectors */
-    margin: 1rem;
-    border: var(--border);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 20rem;
     padding: var(--padding);
     background-color: var(--background-color);
     color: #000;
     text-align: center;
+    border-radius: 3em;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    border-radius: 1em;
 }
 
 aside h2 {
     position: absolute;
     top: 1.5rem;
-    right: 13rem;
-    color: rgb(153, 224, 120);
-}
-
-h1 {
-    font-family: var(--heading-font);
-    color: darkblue;
-}
-
-/* This was prior to adding the aside img and being more specific with the images within main using main img {}
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-*/
-
-p {
-    font-family: var(--heading-font);
-    padding: 0;
+    right: 8rem;
+    color: #6495ed;
+    /* color: rgb(153, 224, 120); */
 }
 
 footer {
     margin-top: 2px;
     border-top: 4px double #000;
     text-align: center;
-}
-
-/* Class Selectors */
-
-.box {
-    /* clear: both; */
-    margin: 1rem;
-    border: var(--border);
-    padding: var(--padding);
-    background-color: var(--background-color);
-    color: var(--font-color);
 }
