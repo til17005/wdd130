@@ -228,7 +228,7 @@ main div {
     height: 20em;
 }
 
-.adventure figure {
+.adventure div {
     display: flex;
     justify-content: center;
     padding: 2em;
