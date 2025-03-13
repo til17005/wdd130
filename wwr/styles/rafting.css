@@ -40,13 +40,17 @@ h6 {
     font-weight: 600;
     font-style: normal;
     text-align: center;
+    color: var(--primary-color);
+    text-shadow: 2px 2px var(--secondary-color);
 }
 
 p {
     line-height: 1.6;
     letter-spacing: .06em;
     font-size: large;
-    text-shadow: 3px 3px var(--primary-color);
+    font-weight: 525;
+    color: var(--primary-color);
+    /* text-shadow: 2px -1px var(--accent1-color); */
 }
 
 /* Reservered
@@ -57,12 +61,11 @@ head {
 body {
     height: 100vh;
     /* Full viewport height */
-    background: var(--primary-color);
 
     /* background: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 33%, var(--secondary-color) 67%), var(--secondary-color) 100%; */
     /* background: linear-gradient(to right, var(--primary-color) 20%, var(--secondary-color) 40%, var(--secondary-color) 60%, var(--primary-color) 75%); */
-    background: linear-gradient(to right, var(--primary-color) 0%, var(--accent2-color) 67%, var(--secondary-color) 90%);
-    color: var(--accent1-color);
+    /* background: linear-gradient(to right, var(--primary-color) 0%, var(--accent2-color) 67%, var(--secondary-color) 90%); */
+    /*background: linear-gradient(to right, var(--secondary-color) 0%, var(--accent1-color) 67%, var(--secondary-color) 90%);
 
     overflow-x: hidden;
     /* Hide bottom scroll bar */
@@ -171,6 +174,7 @@ main div {
     width: 60%;
     padding: 1em;
     margin: 0 auto;
+    font-weight: 600;
 }
 
 .hero ul {
@@ -191,10 +195,6 @@ main div {
 .history {
     padding: 2em;
     justify-items: center;
-}
-
-.history h2 {
-    text-shadow: 2px 5px var(--primary-color);
 }
 
 .history p {
@@ -219,17 +219,13 @@ main div {
 .history-view p {
     flex: 1;
     text-align: justify;
-    max-width: 30%;;
+    max-width: 30%;
 }
 
 .adventure {
     margin: 0 auto;
     padding: 2em;
     height: 20em;
-}
-
-.adventure h2 {
-    text-shadow: 2px 5px var(--primary-color);
 }
 
 .adventure div {
@@ -249,7 +245,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     border-top: 1px solid var(--primary-color);
 }
 
