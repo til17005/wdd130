@@ -228,7 +228,7 @@ main div {
     height: 20em;
 }
 
-.adventure div {
+.adventure figure {
     display: flex;
     justify-content: center;
     padding: 2em;
@@ -238,6 +238,10 @@ main div {
 .adventure img {
     width: 15em;
     border-radius: 2rem;
+}
+
+.adventure figcaption {
+    justify-self: center;
 }
 
 footer {
