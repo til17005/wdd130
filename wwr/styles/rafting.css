@@ -69,37 +69,48 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 2em;
     background-color: var(--accent2-color);
-    display: block;
-    width: 100%;
+    max-width: 100%;
     height: 10rem;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .logo {
+    justify-self: end;
     background-color: var(--primary-color);
     width: 125px;
     height: auto;
-    margin-left: 10%;
-    margin-top: 1rem;
+    margin-right: 5em;
     border-radius: 20px;
     box-shadow: 10px 10px 20px;
 }
 
-.menu {
-    display: inline;
+nav {
+    justify-self: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    text-decoration: none;
 }
 
-.menu a {
-    position: relative;
-    top: -3em;
-    left: 13em;
-    color: var(--accent1-color);
-    padding: 5%;
-}
-
-.menu a:hover {
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    text-decoration: none;
     color: var(--primary-color);
+    border-radius: 4px;
 }
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
 
 /* Reserved
 main {
@@ -172,6 +183,7 @@ main div {
     width: auto;
     height: 20em;
     opacity: 1;
+    border-radius: 2rem;
 }
 
 .history {
@@ -186,6 +198,26 @@ main div {
 .history p {
     padding-top: 1em;
     width: 70%;
+}
+
+.history-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.history-view img {
+    flex: 0 0 auto;
+    max-width: 25%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.history-view p {
+    flex: 1;
+    text-align: justify;
+    max-width: 30%;;
 }
 
 .adventure {
@@ -207,39 +239,33 @@ main div {
 
 .adventure img {
     width: 15em;
+    border-radius: 2rem;
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     background-color: var(--accent2-color);
-    display: block;
-    width: 100%;
-    height: 5rem;
+    border-top: 1px solid var(--primary-color);
 }
 
 footer p {
-    padding-top: 2rem;
+    margin: 0 auto;
     text-align: center;
+    flex: 1;
 }
 
-.footer-menu {
-    display: inline;
+.social {
+    display: flex;
+    gap: 2em;
 }
 
-.footer-menu a {
+.social a img {
     text-decoration: none;
-    position: relative;
-    top: -30%;
-    left: 73em;
-    padding: .5%;
-}
-
-.footer-menu a:hover {
-    color: var(--primary-color);
-}
-
-.footer-menu img {
-    text-decoration: none;
-    width: 2em;
+    width: 24px;
+    height: 24px;
 }
 
 /* Font Use Examples
