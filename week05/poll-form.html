@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <meta name="description" content=" WDD 130 | HTML Form - User Poll">
+    <meta name="author" content="Matthew Tilton">
+
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Matthew Tilton | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contant Information</legend>
+                <div class="form-item column2">
+                    <label>Full Name: <input type="text" id="fullname" name="fullname"></label>
+                </div>
+                <div class="form-item column2">
+                    <label>Email: <input type="email" id="useremail" name="useremail"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-input column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="Google Chrome">Google Chrome</option>
+                        <option value="Microsoft Edge">Microsoft Edge</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Aloha">Aloha</option>
+                        <option value="DuckDuckGo">DuckDuckGo</option>
+                        <option value="Brave">Brave</option>
+                        <option value="Vivaldi">Vivaldi</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-input column1">
+                    <label>Do you have a household pet? <input type="checkbox" id="pet" name="pet"></label>
+                </div>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="6" placeholder="Spanish Fork, Utah"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>©️2025 | 👥HTML Form - User Poll Activity👥 | Matthew Tilton</p>
+    </footer>
+
+</body>
+
+</html>

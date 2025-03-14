@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana;
+    max-width: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+h1 {
+    font-size: large;
+}
+
+form {
+    display: grid;
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 2em;
+    box-shadow: 4px 5px 1em darkblue; 
+    max-width: 600px;
+    margin: auto;
+    padding: 2em;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1em;
+    border-radius: 2em;
+    padding: 2em;
+}
+
+fieldset legend {
+    color: darkslategray;
+    font-size: 1em;
+}
+
+label, input, button, select, textarea {
+    font-family: Tahoma;
+    color: darkslategrey;
+    font-weight: 600;
+}
+
+label {
+    text-align: right;
+    padding-right: 2em;
+}
+
+input, select, textarea {
+    padding: .5em;
+    font-size: 1.25em;
+}
+
+input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: bottom;
+}
+
+button {
+    width: 12em;
+    height: 4em;
+    background-color: darkblue;
+    color: whitesmoke;
+    border-radius: 3em;
+    justify-self: center;
+    margin-top: 2em;
+}
+
+button:hover {
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 1px;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 1px;
+}
