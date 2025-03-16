@@ -267,6 +267,7 @@ fieldset {
 
 .name input {
     margin: 1em;
+    height: 2em;
 }
 
 .message-type {
