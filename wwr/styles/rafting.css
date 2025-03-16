@@ -192,6 +192,62 @@ main div {
     border-radius: 2rem;
 }
 
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    max-width: 800px;
+    margin-top: 2em;
+}
+
+.welcome p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.welcome ul {
+    padding-bottom: 2em;
+}
+
+.offerings {
+    background: linear-gradient(to right, var(--accent2-color) 0%, var(--primary-color) 50%, var(--accent2-color) 100%);
+    padding-top: 2em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: var(--accent1-color);
+    text-shadow: 1px 1px var(--secondary-color);
+}
+
+.offer {
+    padding-top: 2em;
+    list-style-type: none;
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.offerings div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.offerings img {
+    max-width: 20em;
+    height: auto;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2em;
+}
+
+.experience, .expedition, .camping {
+    margin-left: 1.5em;
+}
+
+.welcome ul, li {
+    margin-left: 3em;
+    font-size: 1.1em;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 3fr 4fr;
