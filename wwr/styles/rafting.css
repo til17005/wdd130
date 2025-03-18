@@ -485,6 +485,58 @@ button {
     justify-self: center;
 }
 
+.trips {
+    padding: 2em;
+    background: linear-gradient(to right, var(--accent2-color) 0%, var(--primary-color) 50%, var(--accent2-color) 100%);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    
+}
+
+.trips h2 {
+    grid-column: span 3;
+    color: var(--accent1-color);
+    margin-bottom: 2em;
+}
+
+.trips h4 {
+    color: var(--accent1-color);
+}
+
+.trips p {
+    margin-top: 1em;
+    color: var(--accent1-color);
+    text-shadow: 1px 1px var(--secondary-color);
+    max-width: 25em;
+    text-align: justify;
+}
+
+.trips img {
+    max-width: 30em;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2em;
+}
+
+.action {
+    background: linear-gradient(to right, var(--accent2-color) 0%, var(--primary-color) 50%, var(--accent2-color) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.poseidon{
+    grid-column: 1;
+}
+
+.joy{
+    grid-column: 2;
+}
+
+.chief{
+    grid-column: 3;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
