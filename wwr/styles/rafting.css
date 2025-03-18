@@ -220,6 +220,10 @@ main div {
     text-shadow: 1px 1px var(--secondary-color);
 }
 
+.offerul {
+    justify-self: right;
+}
+
 .offer {
     padding-top: 2em;
     list-style-type: none;
@@ -268,12 +272,7 @@ main div {
     text-shadow: 2px 1px var(--accent1-color);
 }
 
-.experience, .expedition, .camping {
-    margin-left: 1.5em;
-}
-
 .welcome ul, li {
-    margin-left: 3em;
     font-size: 1.1em;
 }
 
