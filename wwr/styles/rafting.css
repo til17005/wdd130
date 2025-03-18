@@ -268,8 +268,8 @@ main div {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.25em;
-    color: var(--secondary-color);
-    text-shadow: 2px 1px var(--accent1-color);
+    color: var(--accent1-color);
+    text-shadow: 2px 1px var(--secondary-color);
 }
 
 .welcome ul, li {
